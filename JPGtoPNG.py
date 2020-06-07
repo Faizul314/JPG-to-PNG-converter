@@ -16,5 +16,5 @@ for file in os.listdir(old_folder):
     img = Image.open(f'./{old_folder}{file}')
     clean_name = os.path.splitext(f'{file}')[0]
     img.save(f'./{new_folder}{clean_name}.png')
-    print('completed')
+    print('converted')
 
